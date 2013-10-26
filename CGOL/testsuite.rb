@@ -3,7 +3,7 @@ require './cgol.rb'
 
 class TestConwaysGameOfLife < Test::Unit::TestCase
 
-=begin
+
   def test_with_an_empty_seed
     # Arrange (a.k.a. define input)
     seed = [].to_set
@@ -19,9 +19,9 @@ class TestConwaysGameOfLife < Test::Unit::TestCase
       failure_message = "An empty seed does not evolve into an empty seed as expected"
     )
   end # def test_with_an_empty_seed
-=end
 
-=begin
+
+
   def test_with_a_seed_of_00
     # Arrange (a.k.a. define input)
     seed = [Cell.new(0,0)].to_set
@@ -37,9 +37,9 @@ class TestConwaysGameOfLife < Test::Unit::TestCase
       failure_message = "A seed of [(0,0)] does not evolve into an empty seed as expected"
     )
   end # def test_with_a_seed_of_00
-=end
 
-=begin
+
+
   def test_with_a_seed_of_00_01
     # Arrange (a.k.a. define input)
     seed =
@@ -58,7 +58,7 @@ class TestConwaysGameOfLife < Test::Unit::TestCase
       failure_message = "A seed of [(0,0),(0,1)] does not evolve into an empty seed as expected"
     )
   end # def test_with_a_seed_of_00_01
-=end
+
 
 =begin
   def test_with_a_seed_of_00_01_10
